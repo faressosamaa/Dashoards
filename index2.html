@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assets Dashboard</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="navbar">
+  <div class="nav-left">
+    <span class="home">Home / Tickets </span>
+  </div>
+
+  <div class="nav-center">
+    <input type="text" id="searchInput" placeholder="Search" />
+  </div>
+
+  <div class="nav-right">
+    <div class="logo-wrapper">
+      <img src="logo\HQ.png" class="nav-logo">
+      <span class="arrow" onclick="toggleLogoMenu()">▼</span>
+
+      <div class="dropdown" id="logoMenu">
+        <div>Profile</div>
+        <div>Settings</div>
+        <div>Logout</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="layout">
+
+  <!-- الكارد الكبيرة -->
+  <div class="main-card">
+    <h2>Total Tickets</h2>
+    <h1>202</h1>
+  </div>
+
+  <!-- الأربعة كروت اللي تحت -->
+ <div class="small-cards">
+
+  <div class="card opened">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Opened Tickets</div>
+    <div class="card-value" id="openedValue"></div>
+    <canvas id="chart1"></canvas>
+  </div>
+
+  <div class="card assigned">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Assigned Tickets</div>
+    <div class="card-value" id="assignedValue"></div>
+    <canvas id="chart2"></canvas>
+  </div>
+
+  <div class="card solved">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Solved Tickets</div>
+    <div class="card-value" id="solvedValue"></div>
+    <canvas id="chart3"></canvas>
+  </div>
+
+  <div class="card closed">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Closed Tickets</div>
+    <div class="card-value" id="closedValue"></div>
+    <canvas id="chart4"></canvas>
+  </div>
+
+</div>
+<!-- Total Tickets Bar Chart -->
+<div class="total-bar-chart">
+    <canvas id="ticketsChart"></canvas>
+</div>
+<div class="total-bar-chart">
+    <canvas id="ticketsChart2"></canvas>
+</div>
+
+
+
+
+
+<div class="filters-modern">
+  <!-- Day Filter -->
+  <div class="filter">
+    <label>Day</label>
+    <div class="custom-dropdown">
+      <div class="selected">All Days</div>
+      <div class="options">
+        <div data-value="all">All Days</div>
+        <div data-value="mon">Monday</div>
+        <div data-value="tue">Tuesday</div>
+        <div data-value="wed">Wednesday</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<canvas id="ticketsHeatmap"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="charts.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
