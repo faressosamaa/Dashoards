@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Of Assets</title>
+
+  <!-- ملفاتك -->
+  <link rel="stylesheet" href="All-assets.css" />
+  <link rel="stylesheet" href="LOFAS.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img class="tile-ico-img" src="logo/HQ.png" alt="Logo" />
+      </div>
+
+      <div class="side-search">
+        <input type="text" placeholder="Menu" aria-label="Menu search" />
+        <img class="icon-img icon-search" src="logo/Sidebar-logo/search_icon_149872.png" alt="Search" />
+      </div>
+
+      <nav class="side-nav" aria-label="Sidebar navigation">
+
+        <!-- Assets Dropdown -->
+        <div class="nav-group open">
+          <button class="nav-item nav-parent active" type="button">
+            <img class="nav-ico-img" src="logo/Sidebar-logo/cube.png" alt="" />
+            <span>Assets</span>
+            <img class="nav-end-img chevron" src="logo/Sidebar-logo/down-chevron.png" alt="" />
+          </button>
+
+          <div class="submenu">
+            <a class="submenu-item" href="All-Assets.html">
+              <span class="dot"></span>
+              Dashboard
+            </a>
+            <a class="submenu-item" href="create-assets.html">
+              <span class="dot"></span>
+              Create Asset
+            </a>
+            <a class="submenu-item" href="ListOfAssets.html">
+              <span class="dot"></span>
+              Assets
+            </a>
+          </div>
+        </div>
+
+        <!-- Assistance Dropdown -->
+        <div class="nav-group">
+          <button class="nav-item nav-parent" type="button">
+            <img class="nav-ico-img" src="logo/Sidebar-logo/customer-service.png" alt="" />
+            <span>Assistance</span>
+            <img class="nav-end-img chevron" src="logo/Sidebar-logo/down-chevron.png" alt="" />
+          </button>
+
+          <div class="submenu">
+            <a class="submenu-item" href="All-Tickets.html">
+              <span class="dot"></span>
+              Dashboard
+            </a>
+            <a class="submenu-item" href="create-ticket.html">
+              <span class="dot"></span>
+              Create Ticket
+            </a>
+            <a class="submenu-item" href="ListOfTickets.html">
+              <span class="dot"></span>
+              Tickets
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo/Sidebar-logo/system-administration.png" alt="" />
+          <span>Management</span>
+          <img class="nav-end-img" src="logo/Sidebar-logo/down-chevron.png" alt="" />
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo/Sidebar-logo/business.png" alt="" />
+          <span>Tools</span>
+          <img class="nav-end-img" src="logo/Sidebar-logo/down-chevron.png" alt="" />
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo/Sidebar-logo/security.png" alt="" />
+          <span>Administration</span>
+          <img class="nav-end-img" src="logo/Sidebar-logo/down-chevron.png" alt="" />
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo/Sidebar-logo/setting.png" alt="" />
+          <span>Setup</span>
+        </a>
+      </nav>
+
+      <div class="side-footer">
+        <div class="contact-title">
+          <img class="contact-ico-img" src="logo/Sidebar-logo/support.png" alt="" />
+          <span>Contact us :</span>
+        </div>
+
+        <a class="contact-line" href="mailto:pharaonx22@gmail.com">
+          <img class="contact-ico-img" src="logo/Sidebar-logo/mail.png" alt="" />
+          <span>Pharaonx22@gmail.com</span>
+        </a>
+
+        <a class="contact-line" href="tel:01234567890">
+          <img class="contact-ico-img" src="logo/Sidebar-logo/phone-call.png" alt="" />
+          <span>01234567890</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN AREA ===== -->
+    <main class="main">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <button class="burger" type="button" aria-label="Toggle menu" id="burgerBtn">
+          <img class="burger-ico-img" src="" alt="Menu" />
+        </button>
+
+        <a class="top-left" href="Home-page.html">Home</a>
+
+        <div class="top-search">
+          <input type="search" placeholder="Search" aria-label="Search" />
+          <img class="icon-img icon-search" src="logo/Sidebar-logo/search_icon_149872.png" alt="Search" />
+        </div>
+
+        <div class="top-right">
+          <details class="user-dd">
+            <summary class="user-summary" aria-label="User menu">
+              <img class="user-logo" src="logo/HQ.png" alt="User" />
+              <img class="user-dd-ico-img" src="logo/Sidebar-logo/arrow-right.png" alt="Open menu" />
+            </summary>
+
+            <div class="user-menu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <!-- CONTENT -->
+      <section class="content">
+        <h2 class="page-title">List Of Assets</h2>
+
+        <div class="container">
+
+          <!-- Buttons + Icons -->
+          <div class="top-actions">
+            <div class="left-actions">
+              <a class="btnn" href="ListOfAssets.html">All Assets</a>
+              <a class="btnn" href="">Filter</a>
+              <a class="btnn" id="addNew" href="create-assets.html">Add New</a>
+            </div>
+
+            <div class="actions">
+              <button class="action-btn" id="refreshBtn" title="Refresh" type="button">
+                <img class="action-ico" src="logo/Icon-btn/4213447-arrow-load-loading-refresh-reload-restart-sync_115423.png" alt="Refresh">
+              </button>
+
+              <button class="action-btn" title="Edit" type="button">
+                <img class="action-ico" src="logo/Icon-btn/edit_modify_icon_196940.png" alt="Edit">
+              </button>
+
+              <button class="action-btn " title="Delete" type="button">
+                <img class="action-ico" src="logo/Icon-btn/delete_basket_trash_icon_229442.png" alt="Delete">
+              </button>
+            </div>
+          </div>
+
+          <!-- Table -->
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Model</th>
+                  <th>Date</th>
+                  <th>Serial number</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><strong>Ultra One</strong></td>
+                  <td>Computer</td>
+                  <td>OMEN</td>
+                  <td>12-4-2025</td>
+                  <td><a href="#">CCAE234F299B2</a></td>
+                  <td><span class="status fixed">Fixed</span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Apex33</strong></td>
+                  <td>Monitor</td>
+                  <td>ASUS TUF Gaming</td>
+                  <td>11-3-2024</td>
+                  <td><a href="#">f2e4a780e35e</a></td>
+                  <td><span class="status maintenance">Need Maintenance</span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Phara77</strong></td>
+                  <td>Printer</td>
+                  <td>Canon PIXMA TR433</td>
+                  <td>24-7-2025</td>
+                  <td><a href="#">c701aae3ce33</a></td>
+                  <td><span class="status maintenance">Need Maintenance</span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Bale11</strong></td>
+                  <td>Sof</td>
+                  <td>Microsoft Office</td>
+                  <td>1-1-2026</td>
+                  <td><a href="#">ABCD1234FECA</a></td>
+                  <td><span class="status damaged">Damaged</span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Mapi44</strong></td>
+                  <td>PDU</td>
+                  <td>TCP/IP</td>
+                  <td>12-2-2026</td>
+                  <td><a href="#">CA32ea88af43</a></td>
+                  <td><span class="status fixed">Fixed</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button class="show-more-btn" id="showMoreBtn" type="button">Show more</button>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="CrAs.js"></script>
+</body>
+</html>

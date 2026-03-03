@@ -1,0 +1,222 @@
+html, body {
+ height: 100%;
+  font-family: system-ui,  "Segoe UI",Arial, sans-serif;
+  background: #f2f3f5;
+}
+/* Force sidebar typography to stay consistent */
+.sidebar,
+.sidebar *{
+  font-family: inherit !important;
+  font-weight: inherit;
+}
+.container{
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header h2{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* ===============================
+   TOP ACTIONS (Buttons + Icons)
+================================ */
+.top-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+/* left buttons group */
+.left-actions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btnn{
+  padding: 10px 25px;
+  border-radius: 20px;
+border: none;
+color: #fff;
+cursor: pointer;
+font-family: system-ui, "Segoe UI", Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  letter-spacing: .2px;
+background: linear-gradient(180deg, #1b3a8b, #2b63e2);
+transform: translateY(-2px);
+ transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.btnn:active{
+  transform: translateY(0);
+ background: rgba(23, 35, 255, 0.347);
+  border-color: rgb(17, 14, 199);
+  
+}
+.btnn:hover{
+  border-color: rgb(146, 24, 24);
+   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+a.btnn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+
+
+/* right icons group */
+.actions{
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-left: auto;
+}
+
+/* icon buttons */
+.action-btn{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+
+.action-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  background: #f6f7f9;
+  border-color: rgb(17, 14, 199);
+}
+.action-ico{
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+.action-btn:active{
+  transform: translateY(0);
+    background: rgba(23, 35, 255, 0.347);
+  border-color: rgb(17, 14, 199);
+  
+}
+
+
+
+.table-container{
+  border: 2px solid #3498db;
+  border-radius: 40px;
+  padding: 18px 22px;
+  background: #f9f9f9;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* table sizing */
+table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  table-layout: fixed;
+}
+
+th{
+  text-align: left;
+  color: #777;
+  padding: 12px 10px;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+td{
+  padding: 14px 10px;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a{
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.status{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;          
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixed{ background-color: #1f8d5f; }
+.maintenance{ background-color: #d1a90cca; }
+.damaged{ background-color: #e14b4b; }
+
+
+.show-more-btn{
+  display: block;
+  margin: 18px auto 0;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+background: linear-gradient(180deg, #1b3a8b, #2b63e2);
+  transition: transform .15s ease, opacity .15s ease;
+  opacity: 95%;
+}
+
+.show-more-btn:hover{
+  transform: translateY(-2px);
+  opacity: .9;
+}
+
+.show-more-btn:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+@media (max-width: 900px){
+  .container{ padding: 18px; }
+  .status{ width: 130px; }
+  th, td{ padding: 10px 8px; }
+}

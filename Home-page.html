@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+  <link rel="stylesheet" href="All-assets.css" />
+</head>
+
+<body>
+  <div class="app">
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+         <img class="tile-ico-img" src="logo\HQ.png"/>
+      </div>
+
+      <!-- Menu search -->
+      <div class="side-search">
+        <input type="text" placeholder="Menu" aria-label="Menu search" />  
+        <img class="icon-img icon-search" src="logo\Sidebar-logo\search_icon_149872.png"/>
+      </div>
+
+      <!-- Nav -->
+      <nav class="side-nav" aria-label="Sidebar navigation">
+       <div class="nav-group">
+  <button class="nav-item nav-parent active" type="button">
+    <img class="nav-ico-img" src="logo\Sidebar-logo\cube.png" />
+    <span>Assets</span>
+    <img class="nav-end-img chevron" src="logo\Sidebar-logo\down-chevron.png" />
+  </button>
+
+  <div class="submenu">
+    <a class="submenu-item" href="All-Assets.html" data-go="All-Assets.html">
+      <span class="dot"></span>
+      Dashboard
+    </a>
+    <a class="submenu-item" href="create-assets.html" data-go="create-assets.html">
+      <span class="dot"></span>
+      Create Asset
+    </a>
+    <a class="submenu-item" href="ListOfAssets.html" >
+      <span class="dot"></span>
+       Assets
+    </a>
+  </div>
+</div>
+
+<!-- Assistance Dropdown -->
+<div class="nav-group">
+  <button class="nav-item nav-parent" type="button">
+    <img class="nav-ico-img" src="logo\Sidebar-logo\customer-service.png" />
+    <span>Assistance</span>
+    <img class="nav-end-img chevron" src="logo\Sidebar-logo\down-chevron.png" />
+  </button>
+
+  <div class="submenu">
+    <a class="submenu-item" href="All-Tickets.html" data-go="All-Tickets.html">
+      <span class="dot"></span>
+      Dashboard
+    </a>
+            <a class="submenu-item" href="create-ticket.html" data-go="create-ticket.html">
+      <span class="dot"></span>
+      Create Ticket
+    </a>
+    <a class="submenu-item" href="#">
+      <span class="dot"></span>
+      Tickets 
+    </a>
+  </div>
+</div>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img"
+               src="logo\Sidebar-logo\system-administration.png" /><span>Management</span>
+               <img class="nav-end-img"
+               src="logo\Sidebar-logo\down-chevron.png"/>
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img"
+               src="logo\Sidebar-logo\business.png"/><span>Tools</span>
+          <img class="nav-end-img"
+               src="logo\Sidebar-logo\down-chevron.png"/>
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img"
+               src="logo\Sidebar-logo\security.png"/><span>Administration</span>
+          <img class="nav-end-img"
+               src="logo\Sidebar-logo\down-chevron.png"/>
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img"
+               src="logo\Sidebar-logo\setting.png"/><span>Setup</span>
+        </a>
+      </nav>
+
+      <!-- Footer / Contact -->
+      <div class="side-footer">
+        <div class="contact-title">
+          <img class="contact-ico-img"
+               src="logo\Sidebar-logo\support.png"/><span>Contact us :</span>
+        </div>
+
+        <a class="contact-line" href="mailto:pharaonx22@gmail.com">
+          <img class="contact-ico-img"
+               src="logo\Sidebar-logo\mail.png"/><span>Pharaonx22@gmail.com</span>
+        </a>
+
+        <a class="contact-line" href="tel:01234567890">
+          <img class="contact-ico-img"
+               src="logo\Sidebar-logo\phone-call.png"/><span>01234567890</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN AREA ===== -->
+    <main class="main">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <!-- Burger يظهر في الموبايل -->
+        <button class="burger" type="button" aria-label="Toggle menu" id="burgerBtn">
+          <img class="burger-ico-img"
+               src=""
+               alt="Menu" />
+        </button>
+<a class="top-left" href="Home-page.html" data-go="Home-page.html">Home</a>
+
+
+        <div class="top-search">
+          <input type="search" placeholder="Search" aria-label="Search" />
+          <img class="icon-img icon-search" src="logo\Sidebar-logo\search_icon_149872.png"alt="Search" />
+        </div>
+
+        <div class="top-right">
+          <!-- dropdown بدون JS باستخدام details -->
+          <details class="user-dd">
+            <summary class="user-summary" aria-label="User menu">
+              <img class="user-logo" src="logo\HQ.png" />
+              <img class="user-dd-ico-img"src="logo\Sidebar-logo\arrow-right.png"alt="Open menu" />
+            </summary>
+
+            <div class="user-menu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <!-- CONTENT -->
+      <section class="content">
+        <div class="tiles">
+          <a class="tile t-black" href="#">            
+              <img class="tile-ico-img" src="logo\computer_23986.png"/>
+            <div class="tile-title">Computers</div>
+            <div class="tile-num">0</div>
+          </a>
+
+          <a class="tile t-navy" href="#">
+              <img class="tile-ico-img" src="logo\software_256_icon-icons.com_76005.png"/>            
+            <div class="tile-title">Softwares</div>
+            <div class="tile-num">5</div>
+          </a>
+
+          <a class="tile t-blue" href="#">            
+              <img class="tile-ico-img" src="logo\network_2045.png"  />            
+            <div class="tile-title">Network Devices</div>
+            <div class="tile-num">67</div>
+          </a>
+
+          <a class="tile t-midblue" href="#">
+              <img class="tile-ico-img" src="logo\iconfinder-serverrack-4417101_116637.png"/>
+            <div class="tile-title">Racks</div>
+            <div class="tile-num">19</div>
+          </a>
+
+          <a class="tile t-sky" href="#">
+              <img class="tile-ico-img" src="logo\phone_4307.png"/>
+            <div class="tile-title">Phones</div>
+            <div class="tile-num">8</div>
+          </a>
+
+          <a class="tile t-dark" href="#">
+              <img class="tile-ico-img" src="logo\monitor_icon-icons.com_64979.png"/>
+            <div class="tile-title">Monitors</div>
+            <div class="tile-num">43</div>
+          </a>
+
+          <a class="tile t-slate" href="#">
+              <img class="tile-ico-img" src="logo\3643767-key-keys-main-password-privilege_113429.png"/>
+            <div class="tile-title">Licenses</div>
+            <div class="tile-num">11</div>
+          </a>
+
+          <a class="tile t-steel" href="#">
+              <img class="tile-ico-img" src="logo\audio_cable_headphone_jack_lead_stereo_icon_123314.png"/>
+            <div class="tile-title">PDUs</div>
+            <div class="tile-num">9</div>
+          </a>
+
+          <a class="tile t-lightblue" href="#">
+              <img class="tile-ico-img" src="logo\clip.png"/>
+            <div class="tile-title">Enclosures</div>
+            <div class="tile-num">39</div>
+          </a>
+
+          <a class="tile t-sky2" href="#">
+              <img class="tile-ico-img" src="logo\print-black-printer-tool-symbol_icon-icons.com_54467.png"/>
+            <div class="tile-title">Printers</div>
+            <div class="tile-num">43</div>
+          </a>
+        </div>
+      </section>
+    <section>
+    <div class="layout">
+  <!-- الكارد الكبيرة -->
+        <div class="main-card">
+    <h2>Total Tickets</h2>
+    <h1>202</h1>
+        </div>
+            <div class="small-cards">
+
+                <div class="card opened">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Opened Tickets</div>
+    <div class="card-value" id="openedValue"></div>
+    <canvas id="chart1"></canvas>
+                </div>
+
+                <div class="card assigned">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Assigned Tickets</div>
+    <div class="card-value" id="assignedValue"></div>
+    <canvas id="chart2"></canvas>
+                </div>
+
+                <div class="card solved">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Solved Tickets</div>
+    <div class="card-value" id="solvedValue"></div>
+    <canvas id="chart3"></canvas>
+                </div>
+
+                <div class="card closed">
+    <img src="logo/ticket_86147.png" class="card-img">
+    <div class="card-title">Closed Tickets</div>
+    <div class="card-value" id="closedValue"></div>
+    <canvas id="chart4"></canvas>
+                </div>
+        </div>
+    </section>
+    <section>
+<div class="filters-modern">
+  <div class="filter">
+    <label>Day</label>
+    <div class="custom-dropdown">
+      <div class="selected">All Days</div>
+      <div class="options">
+        <div data-value="all">All Days</div>
+        <div data-value="mon">Monday</div>
+        <div data-value="tue">Tuesday</div>
+        <div data-value="wed">Wednesday</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="chart-wrapper">
+      <canvas id="assets3D"></canvas>
+    </div>
+    </section>
+     
+    </main>
+   
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="All-assets.js"></script>
+</body>
+</html>

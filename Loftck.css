@@ -1,0 +1,35 @@
+.Priority{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;          
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;          
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.opened{ background-color: #1f8d5f; }
+.solved{ background-color: #aeb1b5; }
+.assigned{ background-color: #528667; }
+.closed{ background-color: #b61a1a; }

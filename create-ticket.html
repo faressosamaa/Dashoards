@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Assets</title>
+
+  <link rel="stylesheet" href="All-assets.css" />
+  <link rel="stylesheet" href="create-assets.css" />
+    <link rel="stylesheet" href="Create-Ticket.css" />
+
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img class="tile-ico-img" src="logo\HQ.png" />
+      </div>
+
+      <div class="side-search">
+        <input type="text" placeholder="Menu" aria-label="Menu search" />
+        <img class="icon-img icon-search" src="logo\Sidebar-logo\search_icon_149872.png" />
+      </div>
+
+      <nav class="side-nav" aria-label="Sidebar navigation">
+
+        <!-- Assets Dropdown -->
+        <div class="nav-group">
+          <button class="nav-item nav-parent active" type="button">
+            <img class="nav-ico-img" src="logo\Sidebar-logo\cube.png" />
+            <span>Assets</span>
+            <img class="nav-end-img chevron" src="logo\Sidebar-logo\down-chevron.png" />
+          </button>
+
+          <div class="submenu">
+            <a class="submenu-item" href="All-Assets.html" data-go="All-Assets.html">
+              <span class="dot"></span> Dashboard
+            </a>
+            <a class="submenu-item active" href="create-assets.html" data-go="create-assets.html">
+              <span class="dot"></span> Create Asset
+            </a>
+            <a class="submenu-item" href="ListOfAssets.html">
+              <span class="dot"></span> Assets
+            </a>
+          </div>
+        </div>
+
+        <!-- Assistance Dropdown -->
+        <div class="nav-group">
+          <button class="nav-item nav-parent" type="button">
+            <img class="nav-ico-img" src="logo\Sidebar-logo\customer-service.png" />
+            <span>Assistance</span>
+            <img class="nav-end-img chevron" src="logo\Sidebar-logo\down-chevron.png" />
+          </button>
+
+          <div class="submenu">
+            <a class="submenu-item" href="All-Tickets.html" data-go="All-Tickets.html">
+              <span class="dot"></span> Dashboard
+            </a>
+            <a class="submenu-item" href="create-ticket.html" data-go="create-ticket.html">
+              <span class="dot"></span> Create Ticket
+            </a>
+            <a class="submenu-item" href="ListOfTickets.html">
+              <span class="dot"></span> Tickets
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo\Sidebar-logo\system-administration.png" />
+          <span>Management</span>
+          <img class="nav-end-img" src="logo\Sidebar-logo\down-chevron.png" />
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo\Sidebar-logo\business.png" />
+          <span>Tools</span>
+          <img class="nav-end-img" src="logo\Sidebar-logo\down-chevron.png" />
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo\Sidebar-logo\security.png" />
+          <span>Administration</span>
+          <img class="nav-end-img" src="logo\Sidebar-logo\down-chevron.png" />
+        </a>
+
+        <a class="nav-item" href="#">
+          <img class="nav-ico-img" src="logo\Sidebar-logo\setting.png" />
+          <span>Setup</span>
+        </a>
+      </nav>
+
+      <div class="side-footer">
+        <div class="contact-title">
+          <img class="contact-ico-img" src="logo\Sidebar-logo\support.png" />
+          <span>Contact us :</span>
+        </div>
+
+        <a class="contact-line" href="mailto:pharaonx22@gmail.com">
+          <img class="contact-ico-img" src="logo\Sidebar-logo\mail.png" />
+          <span>Pharaonx22@gmail.com</span>
+        </a>
+
+        <a class="contact-line" href="tel:01234567890">
+          <img class="contact-ico-img" src="logo\Sidebar-logo\phone-call.png" />
+          <span>01234567890</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <button class="burger" type="button" aria-label="Toggle menu" id="burgerBtn">
+          <img class="burger-ico-img" src="logo\Sidebar-logo\menu.png" alt="Menu" />
+        </button>
+
+        <a class="top-left" href="Home-page.html" data-go="Home-page.html">Home</a>
+
+        <div class="top-search">
+          <input type="search" placeholder="Search" aria-label="Search" />
+          <img class="icon-img icon-search" src="logo\Sidebar-logo\search_icon_149872.png" alt="Search" />
+        </div>
+
+        <div class="top-right">
+          <details class="user-dd">
+            <summary class="user-summary" aria-label="User menu">
+              <img class="user-logo" src="logo\HQ.png" />
+              <img class="user-dd-ico-img" src="logo\Sidebar-logo\arrow-right.png" alt="Open menu" />
+            </summary>
+            <div class="user-menu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </details>
+        </div>
+      </header>
+      <div class="layout">
+  <div class="form-shell ticket-shell">
+
+    <div class="ticket-split">
+
+      <!-- LEFT -->
+      <section class="panel panel-left">
+        <div class="panel-head">Ticket</div>
+
+        <form class="ticket-form">
+          <div class="field">
+            <label>Title</label>
+            <input type="text" placeholder="Name">
+          </div>
+
+          <div class="field">
+            <label>Description *</label>
+            <textarea class="desc"></textarea>
+          </div>
+
+          <div class="upload-box">
+            <div class="upload-inner">
+              <div class="upload-icon">📎</div>
+              <div>
+                <div class="upload-title">Drag&Drop files here</div>
+                <div class="upload-sub">Or</div>
+              </div>
+              <button type="button" class="upload-btn">Browse files</button>
+            </div>
+            <div class="upload-foot">File(s) (2 MB max)</div>
+          </div>
+        </form>
+      </section>
+
+      <!-- RIGHT -->
+      <aside class="panel panel-right">
+        <div class="right-scroll">
+            <div class="mini-card form-glass">
+  <div class="mini-title">Tickets</div>
+
+  <div class="tickets-grid">
+
+    <!-- Opening Date -->
+    <div class="field">
+      <label>Opening Date</label>
+      <input type="date" name="openingDate">
+    </div>
+
+    <!-- Type (custom dropdown) -->
+    <div class="field">
+      <label>Type</label>
+
+      <div class="dd" data-name="type">
+        <button type="button" class="dd-btn">
+          <span class="dd-value is-placeholder" data-placeholder="Choose Type">Choose Type</span>
+          <img class="dd-arrow" src="logo/Sidebar-logo/down-chevron.png" alt="">
+        </button>
+
+        <div class="dd-menu">
+          <button type="button" class="dd-item" data-value="Computer">Computer</button>
+          <button type="button" class="dd-item" data-value="Monitor">Monitor</button>
+          <button type="button" class="dd-item" data-value="PDUs">PDUs</button>
+          <button type="button" class="dd-item" data-value="Network Device">Network Device</button>
+          <button type="button" class="dd-item" data-value="Printer">Printer</button>
+          <button type="button" class="dd-item" data-value="Phone">Phone</button>
+        </div>
+
+        <input type="hidden" name="type" class="dd-hidden">
+      </div>
+    </div>
+
+    <!-- Priority -->
+    <div class="field">
+      <label>Priority</label>
+
+      <div class="dd" data-name="priority">
+        <button type="button" class="dd-btn">
+          <span class="dd-value is-placeholder" data-placeholder="Choose Priority">Choose Priority</span>
+          <img class="dd-arrow" src="logo/Sidebar-logo/down-chevron.png" alt="">
+        </button>
+
+        <div class="dd-menu">
+          <button type="button" class="dd-item" data-value="High">High</button>
+          <button type="button" class="dd-item" data-value="Medium">Medium</button>
+          <button type="button" class="dd-item" data-value="Low">Low</button>
+        </div>
+
+        <input type="hidden" name="priority" class="dd-hidden">
+      </div>
+    </div>
+
+    <!-- Status -->
+    <div class="field">
+      <label>Status</label>
+
+      <div class="dd" data-name="status">
+        <button type="button" class="dd-btn">
+          <span class="dd-value is-placeholder" data-placeholder="Choose Status">Choose Status</span>
+          <img class="dd-arrow" src="logo/Sidebar-logo/down-chevron.png" alt="">
+        </button>
+
+        <div class="dd-menu">
+          <button type="button" class="dd-item" data-value="Opened">Opened</button>
+          <button type="button" class="dd-item" data-value="Assigned">Assigned</button>
+          <button type="button" class="dd-item" data-value="Solved">Solved</button>
+          <button type="button" class="dd-item" data-value="Closed">Closed</button>
+        </div>
+
+        <input type="hidden" name="status" class="dd-hidden">
+      </div>
+    </div>
+
+  </div>
+            </div>
+
+          <div class="mini-card">
+            <div class="mini-title">Actors</div>
+
+            <div class="field">
+              <label>Requester</label>
+              <input type="text">
+            </div>
+
+            <div class="field">
+              <label>Observer</label>
+              <input type="text">
+            </div>
+
+            <div class="field">
+              <label>Assigned to</label>
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-title">Items</div>
+
+            <div class="toggle-row">
+              <button type="button" class="pill active">My Devices</button>
+              <span class="or">OR</span>
+              <button type="button" class="pill">General</button>
+            </div>
+
+            <div class="field">
+              <label>Item</label>
+              <input type="text" placeholder="Database">
+            </div>
+
+           <button class="btn-add" id="goBtn2" type="button" onclick="window.location.href='LOFTCK.HTML'">
+  Add
+</button>
+
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</div>
+
+   </main>
+  </div>
+  <script src="CrAs.js"></script>
+</body>
+</html>

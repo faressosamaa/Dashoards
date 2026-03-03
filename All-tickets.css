@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+ height: 100%;
+  font-family: system-ui,  "Segoe UI",Arial, sans-serif;
+  background: #f2f3f5;
+}
+body{
+    overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.app {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+.sidebar {
+  width: 300px;
+  background: linear-gradient(180deg, #1E1E1E, #873434);
+  color: #fff;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: hidden;
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo-mark {
+  font-size: 28px;
+  font-weight: 800;
+  color: #e14b4b;
+}
+
+.brand-text {
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.brand-tag {
+  font-size: 11px;
+  letter-spacing: 3px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* Sidebar search */
+.side-search {
+  position: relative;
+}
+
+.side-search input {
+  width: 100%;
+  height: 42px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  padding: 0 42px 0 16px;
+}
+
+.side-search img {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Nav */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;                /* ياخد المساحة الفاضية */
+  overflow-y: auto;       /* scroll هنا بس */
+  padding-right: 6px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.1);
+  opacity: 1;
+}
+
+
+.nav-end-img {
+  margin-left: auto;
+}
+
+/* Sidebar footer */
+.side-footer {
+  margin-top: auto;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-title,
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-line {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.contact-line:hover {
+  opacity: 1;
+}
+
+/* ===============================
+   MAIN
+================================ */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* ===============================
+   TOPBAR
+================================ */
+.topbar {
+  height: 72px;
+  background: linear-gradient(90deg, #1E1E1E, #873434);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 16px;
+  color: #fff;
+}
+
+.burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.top-left{
+color: #fff;
+  text-decoration: none;
+  font-style: italic;
+  min-width: 80px;
+  display: inline-block;
+}
+.top-left:hover{
+  opacity: .9;
+}
+
+.top-search {
+  flex: 1;
+  max-width: 520px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-search input {
+  width: 100%;
+  height: 40px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  padding: 0 42px 0 16px;
+}
+
+.top-search img {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.top-right {
+  min-width: 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+.user-dd {
+  position: relative;
+}
+
+.user-dd summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.user-dd summary::-webkit-details-marker {
+  display: none;
+}
+
+.user-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-logo {
+  width: 80px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background: #fff;
+  border-radius: 10px;
+  min-width: 160px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.user-menu a {
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: #111;
+}
+
+.user-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.content {
+  padding: 24px;
+}
+img {
+  display: block;
+  object-fit: contain;
+}
+
+.side-search img,
+.top-search img {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-ico-img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-end-img {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.contact-ico-img {
+  width: 18px;
+  height: 18px;
+}
+
+.burger-ico-img {
+  width: 20px;
+  height: 20px;
+}
+
+.user-dd-ico-img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.tile-ico-img {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;  /* توسيط الصورة فوق الكارد */
+    display: block; 
+    object-fit: cover;
+    border-radius: 10%;
+}
+.layout {
+  height: calc(100vh - 80px);     /* باقي الصفحة فقط */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* الكارد الكبيرة بالعرض */
+.main-card {
+  background: linear-gradient(180deg, #1b3a8b, #2b63e2);
+  color: white;
+  border-radius: 25px;
+
+  padding: 30px;
+  text-align: center;
+}
+
+/* الكونتينر بتاع الأربع كروت */
+.small-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: auto;
+}
+.card {
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  overflow: visible; 
+  max-height: 180px;  /* عشان ما يتمددش أكتر */
+}
+
+.card-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-3px); /* يرفع الكارد ويكبره شوية */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* يزيد الظل */
+    background: linear-gradient(180deg, #1b3a8b, #2b63e2);
+}
+
+.card-value {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.card canvas {
+  flex: 1;
+  width: 100% !important;
+  height: 120px !important;
+  max-height: 150px;
+}
+/* ألوان كل كارد */
+.opened {
+  background: #1f8d5f;
+}
+
+.assigned {
+  background: #6aaa85;
+}
+
+.solved {
+  background: #dfe4ea;
+}
+
+.closed {
+  background: #b61a1a;
+}
+.total-bar-chart {
+  margin: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.total-bar-chart canvas {
+  width: 100% !important;
+  height: 300px !important; /* ارتفاع مناسب للـ chart */
+}
+.filters-modern {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Custom Dropdown */
+.custom-dropdown {
+  position: relative;  /* relative عشان options تكون absolute داخله */
+  width: 150px;
+  cursor: pointer;
+  border-radius: 12px;
+    background: linear-gradient(180deg, #1b3a8b, #2b63e2);
+  color: white;
+  padding: 10px 15px;
+  user-select: none;
+  z-index: 1000; /* فوق كل حاجة */
+}
+
+.custom-dropdown:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.custom-dropdown .selected::after {
+  content: "▼";
+  float: right;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.custom-dropdown .options {
+  position: absolute;  /* مهم */
+  top: 100%;           /* تحت الـ selected */
+  left: 0;
+  right: 0;
+  display: none;
+  background: #fff;
+  color: #333;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10000;  /* أعلى من canvas */
+}
+.options {
+  position: absolute;
+  z-index: 10000;
+}
+
+.custom-dropdown .options div {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-dropdown .options div:hover {
+  background: #f0f0f0;
+}
+.nav-parent{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* container */
+.nav-group{
+  border-radius: 14px;
+}
+
+/* submenu */
+.submenu{
+  display: none;
+  margin: 6px 0 10px;
+  padding-left: 44px;     /* يزقها يمين تحت Assets */
+  padding-right: 10px;
+}
+
+.nav-group.open .submenu{
+  display: block;
+}
+
+/* عناصر الـ submenu */
+.submenu-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 12px;
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.95;
+  transition: 0.15s ease;
+}
+
+.submenu-item:hover{
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+}
+
+/* Dot صغيرة شيك */
+.submenu-item .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.55);
+}
+
+/* سهم dropdown يعمل rotate */
+.chevron{
+  transition: transform 0.18s ease;
+}
+
+.nav-group.open .chevron{
+  transform: rotate(180deg);
+}
+
+
